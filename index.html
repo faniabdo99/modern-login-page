@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Vue.js</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+    <!-- Bootstrap 4 -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" >
+  </head>
+  <style>
+  /* Page Reset */
+  *{
+    margin:0;
+    padding: 0;
+    }
+  body{
+    padding: 100px 0px;
+    background-image: linear-gradient(to bottom , #7d7f8b, #a6938f);
+  }
+  .col-md-4 , .col-md-6{
+    padding:0 !important;
+  }
+
+
+  /*The Main Containers*/
+  .login-form-desc{
+    background-color: #26262e;
+    padding: 50px 10px 20px 80px;
+    height: 650px;
+  }
+  .login-form-desc h4{
+    color : #fff;
+    margin-bottom: 20px;
+    font-family: 'Montserrat' , tahoma , sans-serif;
+  }
+  .login-form-desc p{
+    color : #a3a3a3;
+    font-family: 'Montserrat' , tahoma , sans-serif;
+    font-size: 0.9em;
+  }
+  .login-form-desc a.cta-button{
+    background-color: #c13b3b;
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 15px;
+    display: block;
+    width: 35%;
+    text-align: center;
+    font-family: 'Montserrat' , tahoma , sans-serif;
+    font-size: 0.9em;
+    transition: all ease 0.2s;
+  }
+  .login-form-desc a.cta-button:hover{
+    text-decoration: none;
+    background-color: #a63c3c;
+    transition: all ease 0.2s;
+  }
+  .copyrights{
+    position: absolute;
+    bottom: 40px;
+    font-size: 14px;
+    font-family: "Muli" , tahoma , sans-serif !important;
+  }
+  .brand{
+    margin-bottom: 110px;
+  }
+  .brand p{
+    color :#fff;
+    font-family: "Muli" , tahoma , sans-serif !important;
+  }
+  .brand b{
+    color :#c13b3b;
+  }
+  .login-form{
+    background: url('http://lorempixel.com/200/500/nature/') center center no-repeat;
+    background-size: cover;
+    height: 650px;
+  }
+  .login-form-content{
+    height: 650px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 180px 10px 20px 20px;
+  }
+  .login-form-content h4{
+    color: #fff;
+    margin-bottom: 20px;
+    font-family: 'Montserrat' , tahoma , sans-serif;
+
+  }
+  .login-form-content form label{
+    display: block;
+    color : #fff;
+    font-weight: bold;
+    font-size: 0.9em;
+    font-family: "Muli" , tahoma , sans-serif !important;
+    margin-bottom: 5px;
+
+  }
+  .login-form-content form input{
+    display: block;
+    background-color:rgba(0,0,0,0);
+    border:none;
+    border-bottom: 2px solid #818181;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 30px;
+    font-family: "Muli" , tahoma , sans-serif !important;
+
+  }
+  .login-form-content form input[type="submit"]{
+    display: inline-block;
+    background-color:#818181;
+    border:none;
+    border-radius: 50px;
+    padding: 10px 15px;
+    width: 50%;
+    color: #fff;
+  }
+  </style>
+  <body>
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-1">
+        <div class="login-form-desc">
+          <div class="brand"><p>My <b>Brand</b></p></div>
+          <h4>Welcome Back , Dear</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <a class="cta-button" href="#">Call to Action</a>
+          <div class="copyrights">
+            <p>Designed With Love By Abd Alrahman Fani</p>
+          </div>
+      </div>
+    </div>
+      <div class="col-md-4">
+        <div class="login-form">
+          <div class="login-form-content">
+            <h4>Login</h4>
+            <form>
+              <label>Email</label>
+              <input type="email" placeholder="Enter your email here" >
+              <label>Password</label>
+              <input type="email" placeholder="Enter your password here" >
+              <input type="submit" value="Login">
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+</div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </body>
+</html>
